@@ -29,9 +29,9 @@
     <div class="option">
         <h3>Ustawienia</h3>
         <form th:action="@{/}" method="post">
-            <p>Podaj ilośc słów </p>
+            <p th:text="#{quantityWord}"></p>
             <p> <input type="text" th:name="quantityWord" th:value="120" placeholder="30"></p>
-            <p>Podaj ilość akapitów</p>
+            <p th:text="#{quantityParagraf}"></p>
             <p><input type="text" th:name="quantityParagraph" th:value="1" placeholder="1"></p>
             <p><input class="btn btn-primary" type="submit" value="Generuj"></p>
         </form>
