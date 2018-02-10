@@ -6,6 +6,7 @@ body
 
 .container
 {
+    padding: 0px;
     background-color: lightgray;
     margin-left: auto;
     margin-right: auto;
@@ -17,7 +18,7 @@ body
 {
     background-color: black;
     padding-top: 15px;
-    height: 10vh;
+    height: 80px;
     text-align: center;
     color: white;
 }
@@ -49,7 +50,7 @@ body
     clear: both;
     background-color: black;
     color: white;
-    height: 5vh;
+    height: 60px;
     padding: 5px;
     text-align: center;
 }
