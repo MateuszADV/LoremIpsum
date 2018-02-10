@@ -1,0 +1,59 @@
+body
+{
+    /*background-color: darkgray;*/
+    background: url("images/low_contrast_linen.png");
+}
+
+.container
+{
+    background-color: lightgray;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75vw;
+    min-height: 100vh;
+}
+
+.heder
+{
+    background-color: black;
+    padding-top: 15px;
+    height: 10vh;
+    text-align: center;
+    color: white;
+}
+.text
+{
+    float: left;
+    width: 70%;
+    min-height: 85vh;
+    padding-top: 15px;
+    padding-right: 20px;
+    padding-left: 20px;
+    text-align: center;
+    text-align: justify;
+    border-right: 1px solid black;
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+}
+
+.option
+{
+    float: left;
+    width: 25%;
+    padding-top: 20px;
+    min-height: 80vh;
+    text-align: center;
+}
+.footer
+{
+    clear: both;
+    background-color: black;
+    color: white;
+    height: 5vh;
+    padding: 5px;
+    text-align: center;
+}
+
+.selektor{
+    text-indent: 1cm;
+}

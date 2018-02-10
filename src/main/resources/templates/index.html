@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>LOREM IPSUM</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" th:href="@{css/style.css}" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Dhurjati|Lato:100,100i,300,300i,400,400i,700,700i,900,900i&amp;subset=latin-ext" rel="stylesheet">
+
+
+</head>
+<body>
+<div class="container">
+    <div class="heder">
+        <h1>LOREM IPSUM</h1>
+    </div>
+
+    <div class="text">
+        <h2>LOREM IPSUM</h2>
+        <span class="selektor" th:text="${loremIpsum}"></span>
+
+        <th:block th:each="par : ${paragraph}">
+            <p class="selektor" th:text="${par}"></p>
+        </th:block>
+    </div>
+
+    <div class="option">
+        <h3>Ustawienia</h3>
+        <form th:action="@{/}" method="post">
+            <p>Podaj ilośc słów </p>
+            <p> <input type="text" th:name="quantityWord" th:value="120" placeholder="30"></p>
+            <p>Podaj ilość akapitów</p>
+            <p><input type="text" th:name="quantityParagraph" th:value="1" placeholder="1"></p>
+            <p><input class="btn btn-primary" type="submit" value="Generuj"></p>
+        </form>
+    </div>
+
+    <div class="footer">
+        <p>STOPKA 2018</p>
+    </div>
+
+</div>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
